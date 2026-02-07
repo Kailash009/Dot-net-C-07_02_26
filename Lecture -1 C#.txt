@@ -1,0 +1,73 @@
+C#:-
+-----------
+>> C# is high level , object oriented , and type safe programming language.
+>> C# was developed by 'Andres Hejlsberg' in 2002.
+>> C# is platform independent language.
+----------------------------------------------------------
+Type Safe :- 
+-----------------
+>> Whatever the type of your variable you can store only that type of value. if you assign any other value before compilation it will show an error.
+int a="Hello" ; // it will throw an error before compilation.
+Type unsafe.
+C -> int a="Hello"; it will give you an error after compilation.
+------------------------------------------------------------------
+Dot Net:-
+----------------
+>> .net =>> It stands for Network Enabled Technology.
+>> It is not a programming language , it is a framework i.e. used to build many type of applications which are as follows:-
+There are two types of application in the market:-
+a) CUI. [Command User interface] 
+>> User should know each and every command to interact this type of application.
+For Example:- cmd [Command Prompt] , GIT etc.
+----------------------------------------------------------------------------------
+b) GUI. [Graphical User Interface.]
+	i) Desktop Application. [Windows Based Application.]
+>> An application that run with the help of O.S.
+>> It is user-friendly UI. [user can interact and work with very easily.]
+for Ex:- Tally , office packages , visual studio etc.
+	ii) Web Application .
+>> An application that run with the help of Web Browser.
+>> It follows client - server architecture.
+>> It can be access anywhere.
+	iii) Mobile Application. / Android Application. =>> Xamarin / Mono.
+	iv) Web Services. [WCF] (Windows Communication Foundation.)
+	v)  Web API's. and many more..
+-----------------------------------------------------------------------------
+Dot Net Components:-
+---------------------------
+There are two major components in dot net which are as follows:-
+a) CLR. [Common Language RunTime.]
+>> All dot net applications are executed/run by CLR.
+	CLR has sub-components:-  Pending.
+		i) CTS.
+		ii) CLS.
+		iii) GC.
+		iv) Native Code.
+b) BCL/FCL. [Base Class Library / Framework Class Library.]
+>> It has predefined libraries , methods , classes are defined.
+using System; // BCL/FCL.    [ System => Namespace. ]
+Console.ReadLine(); ==>> It is used to take the input from the user.
+Console.WriteLine(); ==>> It is used to display the output.
+--------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
