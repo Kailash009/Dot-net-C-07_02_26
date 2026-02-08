@@ -1,0 +1,215 @@
+Dot Net Components:-
+---------------------------
+>> dot net support multiple programming language. [62+]
+There are two major components in dot net which are as follows:-
+a) CLR. [Common Language RunTime.]
+>> All dot net applications are executed/run by CLR.
+	CLR has sub-components:-
+		i) CTS. 
+	>> CTS stands for Common Type System.
+	>> All primitive data types [byte , bool , int, char , float ,double etc.] are defined
+into CTS.
+		ii) CLS.
+>> CLS stands for Common Language Specification.
+>> After compilation of  your code you didn't get any difference. [MSIL] (Intermediate Language)
+------------------------------------------------------------------------
+		iii) GC.
+>> GC stands for Garbage Collector.
+>> It release/free unused memory from your program.
+		iv) Native Code.
+>> It is a binary code / machine code which we can execute in any O.S.
+--------------------------------------------------------------------------
+b) BCL/FCL. [Base Class Library / Framework Class Library.]
+>> It has predefined libraries , methods , classes are defined.
+using System; // BCL/FCL.    [ System => Namespace. [Collection of Classes.] ]
+Console.ReadLine(); ==>> It is used to take the input from the user.
+Console.WriteLine(); ==>> It is used to display the output.
+----------------------------------------------------------------
+C# Compilation Process:-
+---------------------------------
+>> C# is a two-way compilation process.
+>> In first compilation process , our C# code converted into MSIL code using .csc compiler.
+>> In second compilation process , our MSIL code converted into Byte code using JIT compiler.
+--------------------------------------------------------
+Variable / Identifier:-
+-------------------------------
+>> A variable is a memory location / container , i.e. used to store a value.
+Rules of declaring Variable:-
+----------------------------------
+a) Variable name always start from characters.
+	int a23=2; [Correct]
+b) Variable name can't start from digit.
+	int 34adb=5; [Incorrect]
+c) No space allowed between variable name.
+	int a     b2 = 300;  [Incorrect]
+d) Hyphens are not allowed between variable name.
+	int a-b=34;  [Incorrect]
+e) Underscore is allowed while declaring variable name.
+	int a_b=29; [ correct ]
+f) Keywords are not allowed.
+	int while=34;  [Incorrect]
+g) Both upper case and lower case treated as two different variable name.
+	int age=34;
+	int Age=12;
+	int AGE=13;
+	int AgE=12; (Four different variable name)
+-------------------------------------------------------------------
+Variable Initialization:-
+--------------------------
+>> To assign value to the variable.
+int a=5; // 5 assign into a variable.
+int b=2; // 2 assign into a variable.
+---------------------------------------------
+Variable Declaration:-
+--------------------------
+>> Don't assign any value to the variable.
+int a, b , c; // Here we declare three variable name as a , b , c .
+--------------------------------------------------------------------------
+Constant / Literals:-
+---------------------------
+>> It is fixed value i.e. never going to be changed throughout the whole program.
+Types of Constant:-
+-------------------------------
+There are three types of constant:-
+a) Numeric Constant.
+>> It hold numeric value 1 to infinite. 1 .... and so on..
+	i) Decimal Constant. --->> it hold value between 0 to 9.
+	ii) Octal Constant. --->> it hold value between 0 to 7.
+	iii) Hexadecimal Constant. --->> it hold value between 0 to 15.
+	iv) Floating-Point Constant. --->> it hold numeric and decimal values.
+		For Example :- 34 , 4.5 , 3.4 etc.
+b) Character Constant.
+>> It hold only single character.
+>> It is represented by single quotes ' ' .
+For Example :-  'v' ,  '1' , '$' etc.
+c) String Constant.
+>> It hold multiple character at once.
+>> It is represented by double quotes ' ' .
+For Example :-  "abcdf" ,  "13455" , "*&^*^*##*##$" , "fdfs7878f&#&#&#s" etc.
+--------------------------------------------------------
+Keywords:-
+--------------
+>> It is reserved words which have special meaning in our program.
+For Example:-  while , do-while, foreach , if , else , switch , public , class etc.
+--------------------------------------
+Data Type:-
+-----------------
+>> It identifies that which type of value a variable can hold.
+There are three types of data type:-
+a) Primitive DT. 
+>> It store only single value.
+byte ->> 8 bit.
+bool  ->> 1 bit.
+int  -> 32 bits.
+float -> 32 bits
+char -> 16 bits.
+double -> 64 bits
+------------------------------------------------
+b) Non-Primitive or Referential DT.
+	string , array , object etc. 
+c) User Defined DT.
+	class  etc.
+-------------------------------------------
+Operator:-
+----------------
+>> Operator is a special symbol , i.e. used to define which operation need to be performed.
+Types of Operator:-
+1) Arithmetic Operator.
+2) Relational Operator.
+3) Logical Operator.
+4) Assignment Operator.
+5) Ternary / Conditional Operator.
+6) Bitwise Operator.
+7) Increment / Decrement Operator.
+---------------------------------------------
+1) Arithmetic Operator.
+>> It is used to perform mathematical operation.
++ , - , * , / , % etc.
+2) Relational Operator.
+>> To perform relation between operand.
+>> It return Boolean value [ True / False ].
+    > >= < <=  ==  !=    
+------------------------------------------
+For Example:-
+-----------------
+int a=5,b=9;
+a>b  ->> False
+a<b  ->> True 	 
+a>=b ->> False
+a<=b ->> True
+a==b ->> False
+a!=b ->> True
+----------------------
+3) Logical Operator.
+>> It is used to perform logics between operands.
+AND   &&
+>> Both condition must be true then result true otherwise false.
+OR    ||
+>> Either one of the condition is true then result is true otherwise false.
+NOT.  !
+>> If input is true then result is false and vice-versa.
+--------------------------------------------------------------------------------
+4) Assignment Operator.
+>> It is used to assign value into variable.
+=
++=
+-=
+*=
+/=
+%=
+-------------------
+5) Ternary / Conditional Operator.
+>> It has three expression / operands.
+>> It used ?  and : symbol.
+Syntax:-
+-------------
+(Condition) ? True : False.
+------------------------------------------
+For Example:-
+------------------
+int a=4,b=9,res;
+res=(a>b)?a:b;
+cw(res); // 9 answer
+------------------------------------------
+6) Bitwise Operator.  -->> Pending.
+7) Increment / Decrement Operator.
+-----------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
