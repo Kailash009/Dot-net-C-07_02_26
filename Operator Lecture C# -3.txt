@@ -1,0 +1,329 @@
+6) Bitwise Operator.
+>> It works on bit. [0,1]
+1 -> True
+0 -> False.
+---------------------------------
+	a) Bitwise AND.  &
+int a=5 -> 0101
+int b=4 -> 0100
+----------------------
+a&b  ->>   0100  ->> 4 ans    
+----------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    // Bitwise Operator
+    class Demo
+    {
+        static void Main()
+        {
+            int a=5, b=4, res;
+            res = a & b;
+            Console.WriteLine(res); // 4
+        }
+    }
+}
+------------
+
+	b) Bitwise OR.   |
+int a=5 -> 0101
+int b=4 -> 0100
+----------------------
+a|b  ->>   0101  ->> 5 ans    
+----------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    // Bitwise Operator
+    class Demo
+    {
+        static void Main()
+        {
+            int a=5, b=4, res;
+            res = a | b;
+            Console.WriteLine(res); // 5
+        }
+    }
+}
+----------------------
+	c) Bitwise XOR.  ^
+Note: if both inputs are same [1 1, 0 0] then result is 0 whether both the inputs are True. In different inputs it give 1.
+int a=5 -> 0101
+int b=4 -> 0100
+----------------------
+a^b  ->>   0001  ->> 1 ans    
+----------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    // Bitwise Operator
+    class Demo
+    {
+        static void Main()
+        {
+            int a=5, b=4, res;
+            res = a ^ b;
+            Console.WriteLine(res); // 1
+        }
+    }
+}
+--------------
+	d) Shift Left.  <<
+>> shift all the bits towards its left.
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    // Bitwise Operator
+    class Demo
+    {
+        static void Main()
+        {
+            int a=5,res;
+            res = a<<3;
+            Console.WriteLine(res); // 40
+        }
+    }
+}
+	e) Shift Right. >> 
+>> shift all the bits towards its right.
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    // Bitwise Operator
+    class Demo
+    {
+        static void Main()
+        {
+            int a=5,res;
+            res = a>>2;
+            Console.WriteLine(res); // 1
+        }
+    }
+}
+--------------------------------------------------
+7) Increment / Decrement Operator.
+>> it is used to inc/dec values on operands.
+a) Prefix inc/dec.
+>> Operator come before operand.
+++a  or a=1+a;
+--a; or a=1-a;
+b) Postfix inc/dec.
+>> Operator come after operand.
+a++; or a=a+1;
+a--; or a=a-1;
+-----------------------------------------
+int a=5;
+cw(a++); 5 
+cw(++a); 7 
+cw(a++); 7
+cw(a++); 8
+cw(++a); 10
+cw(a);   10
+-----------------------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            Console.WriteLine("Welcome to first program!!");
+        }
+    }
+}
+-------------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    // Arithmetic Operator.
+    class Demo
+    {
+        static void Main()
+        {
+            int a = 15, b = 4;
+            Console.WriteLine(a+b);
+            Console.WriteLine(a-b);
+            Console.WriteLine(a*b);
+            Console.WriteLine(a/b);
+            Console.WriteLine(a%b);
+        }
+    }
+}
+------------------------------------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    // Relational Operator.
+    class Demo
+    {
+        // <  ->> Less Than
+        // >  ->> Greater Than
+        static void Main()
+        {
+            int a = 15, b = 4;
+            Console.WriteLine(a<b); // false
+            Console.WriteLine(a>b); // true
+            Console.WriteLine(a<=b); // false
+            Console.WriteLine(a==b); // false
+            Console.WriteLine(a!=b); // true
+        }
+    }
+}
+-------------------------------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    // Logical Operator.
+    class Demo
+    {
+        // <  ->> Less Than
+        // >  ->> Greater Than
+        static void Main()
+        {
+            int a = 15, b = 4,c=9;
+            Console.WriteLine(a<b || c>b); // True
+            Console.WriteLine(a>b && b<a); // True
+            Console.WriteLine(a<=b || a>b); // True 
+            Console.WriteLine(a==b || b>c); //  False
+            Console.WriteLine(!(a!=b));     // False
+        }
+    }
+}
+---------------------------------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    // Assignment Operator
+    class Demo
+    {
+        static void Main()
+        {
+            int a=4;
+            Console.WriteLine(a); // 4
+            a += 2; // a=a+2
+            Console.WriteLine(a); // 6
+            a -= 3; // a=a-3
+            Console.WriteLine(a); // 3 
+            a *= 4; // a=a*4
+            Console.WriteLine(a); // 12
+            a /= 4; // a=a/4
+            Console.WriteLine(a); // 3 
+            a %= 5; // a=a%5;
+            Console.WriteLine(a); // 3
+        }
+    }
+}
+-------------------------------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    // Ternary Operator
+    class Demo
+    {
+        static void Main()
+        {
+            int a=5, b=8, res;
+            res = (a != b) ? a : b;
+            Console.WriteLine(res); // 5
+        }
+    }
+}
+--------------------------------------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+   // Inc / Dec Operator
+    class Demo
+    {
+        static void Main()
+        {
+            int a=5;
+            Console.WriteLine(a++); //5
+            Console.WriteLine(++a); //7
+            Console.WriteLine(a++); //7
+            Console.WriteLine(a++); //8
+            Console.WriteLine(++a); //10
+            Console.WriteLine(a); //10
+        }
+    }
+}
+-------------------------------------------
+int a=3;
+cw(a++);3   3 3
+cw(++a);5   4 5
+cw(a++);5   4 5
+cw(++a);7   5 7
+cw(a++);7   5 8
+cw(a++);8   6 8
+cw(++a);10   6 9
+cw(a++);10   7 10 
+cw(a); 11    7  10
+-----------------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+   // Inc / Dec Operator
+    class Demo
+    {
+        static void Main()
+        {
+            int a=3;
+            Console.WriteLine(a++);
+            Console.WriteLine(++a);
+            Console.WriteLine(a++);
+            Console.WriteLine(++a);
+            Console.WriteLine(a++);
+            Console.WriteLine(a++);
+            Console.WriteLine(++a);
+            Console.WriteLine(a++);
+            Console.WriteLine(a);
+        }
+    }
+}
+---------------------------
+int a=2;
+cw(a++);2  2
+cw(a--);3  2
+cw(a++);2   2
+cw(--a);2   2
+cw(a++);2   2
+cw(a) 3     3
+-----------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+   // Inc / Dec Operator
+    class Demo
+    {
+        static void Main()
+        {
+            int a=2;
+            Console.WriteLine(a++);
+            Console.WriteLine(a--);
+            Console.WriteLine(a++);
+            Console.WriteLine(--a);
+            Console.WriteLine(a++);
+            Console.WriteLine(a);
+        }
+    }
+}
+----------------------------------------------
+
+
+
+
+
