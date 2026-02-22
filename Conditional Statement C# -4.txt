@@ -1,0 +1,493 @@
+Type Conversion:-
+---------------------------
+>> To convert one data type value into another data type.
+Types of Type Conversion:-
+a) Implicit/Automatic.
+>> To convert lower data type value into higher data type.
+>> There is no data loss.
+For Example:-
+---------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+   // Inc / Dec Operator
+    class Demo
+    {
+        static void Main()
+        {
+            int a = 34;
+            double b = a;  // Implicit
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+        }
+    }
+}
+---------------------------------------------------------------
+b) Explicit.
+>> To convert higher data type value into lower data type.
+>> There is a data loss.
+For Example:-
+---------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+   // Inc / Dec Operator
+    class Demo
+    {
+        static void Main()
+        {
+            double a = 34.893;
+            int b = (int)a;  // Explicit.  .893 loss
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+        }
+    }
+}
+-------------------------------------------
+c) Conversion between Incompatible Types.
+-----------------------------------------------------------
+string - int 
+-----------------------
+i) Convert Class.
+ii) parse().
+-------------------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+   // Inc / Dec Operator
+    class Demo
+    {
+        static void Main()
+        {
+            string a = "337373";
+            //int b = Convert.ToInt32(a); // Class
+            int b = int.Parse(a); // Method
+            Console.WriteLine(b);
+        }
+    }
+}
+-----------------------------------------------
+Boxing:- To Convert value type into reference type is called Boxing.
+Unboxing:-  To Convert reference type into value type is called Unboxing.
+---------------------------------------------------------------------------
+wap to input two number and find product.
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            int a, b,p;
+            Console.WriteLine("Enter two number=>>");
+            a =Convert.ToInt32(Console.ReadLine());
+            b =int.Parse(Console.ReadLine());
+            p = a * b;
+            Console.WriteLine("Product =>> " +p);
+        }
+    }
+}
+------------------------
+Assignment 1 
+--------------------
+1.wap to input two number and find the add, sub, mult, div, rem.
+2.wap to input two number and swap using third variable.
+3.wap to input two number and swap without using third variable.
+4.wap to input the length and breath of rectangle and find its area,perimeter and diagonal.
+5.wap to input the radius of circle and find its area and circumference.
+6.wap to input in Farhenhite and convert it into celcius and vice-versa.
+--------------------------------------------------------------------------
+Conditional / Decision-Making Statements:-
+------------------------------------------------
+>> This statement is used to test the condition in your program.
+Types of CS:-
+---------------------
+a) IF.
+b) IF-ELSE.
+c) IF-Else-if Ladder.
+d) Nested If.
+e) Switch.
+--------------------------------------------------------------------
+a) IF.
+>> It is used to check only single condition.
+syntax:-
+if(condition)
+{
+// statement;
+}
+For Example:-
+--------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            int age = 18;
+            if(age>=18)
+            {
+                Console.WriteLine("Valid for Vote..");
+            }
+        }
+    }
+}
+-------------------------------------
+b) IF-ELSE.
+Syntax:-
+if(condition)
+{
+statement1;
+}
+else
+{
+statement2;
+}
+-----------------------------------
+For Example:-
+-------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            int a = 2, c = 5;
+            if (a >= c)
+            {
+                Console.WriteLine("JAVA...");
+            }
+            else
+            {
+                Console.WriteLine("PYTHON..");
+            }
+        }
+    }
+}
+--------------
+c) IF-Else-if Ladder.
+>> this statement is used to test multiple condition in our program.
+Syntax:-
+---------------
+if(condition1)
+{
+statement1;
+}
+else if(condition2)
+{
+statement2;
+}
+else if(condition3)
+{
+statement3;
+}
+else if(condition4)
+{
+statement4;
+}
+else if(condition5)
+{
+statement5;
+}
+else
+{
+statement6;
+}
+--------------------------------
+For Example:-
+----------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            int a = 2,b=8, c = 5;
+            if (a >= c || b<a)
+            {
+                Console.WriteLine("JAVA...");
+            }
+            else if(b!=c && c<a)
+            {
+                Console.WriteLine("PHP");
+            }
+            else if (a>b || b < c)
+            {
+                Console.WriteLine("Dot net");
+            }
+            else if (c==a || c < a)
+            {
+                Console.WriteLine("React");
+            }
+            else
+            {
+                Console.WriteLine("Enjoy Programming!!..");
+            }
+        }
+    }
+}
+--------------------------
+d) Nested If.
+>> If within if is called nested if.
+Syntax:-   a) T/T ->> st2  b) T/F -> st3  c) F -> st1;
+--------------
+if(condition1)
+{
+if(condition2)
+{
+statement2;
+}
+else
+{
+statement3;
+}
+else
+{
+statement1;
+}
+}
+----------------
+For Example:-
+-----------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            int a = 2,b=8, c = 5;
+            if(c<=a)
+            {
+                if(a>b || c<a)
+                {
+                    Console.WriteLine("Good");
+                }
+                else
+                {
+                    Console.WriteLine("BAD");
+                }
+            }
+            else
+            {
+                if(b>a && b<c)
+                {
+                    if(c!=a && b>c)
+                    {
+                        Console.WriteLine("JAVA");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Python");
+                    }
+                }
+            }
+            Console.WriteLine("End of Program!!");
+        }
+    }
+}
+-------------------
+e) Switch.
+>> It is a multi-directional conditional control statement.
+>> when there is a possibility in a program to make a choice among number of alternatives then we use the concept of switch.
+>> It is used to create Menu - Based Program.
+-----------------------------------------------------------
+Syntax:-
+---------------
+switch(expression)
+{
+case 1:
+statement1;
+break;
+case 2:
+statement2;
+break;
+case 3:
+statement3;
+break;
+case 4:
+statement4;
+break;
+default: // Optional
+statement5;
+break;
+}
+------------------------------
+For Example:-
+-------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            int choice = 4;
+            switch (choice)
+            a
+                case 1:
+                    Console.WriteLine("Tea");
+                    break;
+                case 2:
+                    Console.WriteLine("Coffee");
+                    break;
+                case 3:
+                    Console.WriteLine("Samosa");
+                    break;
+                case 4:
+                    Console.WriteLine("Pateeze");
+                    break;
+                default:
+                    Console.WriteLine("Wrong input Choice..");
+                    break;
+            }
+        }
+    }
+}
+--------------------------------------
+Assignment 2
+------------------------
+1. wap to input two number and find the smallest number among them.
+2. wap to input three number and find the smallest number among them.
+3. wap to input a number and check its even or odd.
+4. wap to input year and check its leap year or not.
+5. wap to input a character and check whether input character is in Upper case,LOwer Case,Digit or special Symbol.
+6. wap to input five subject marks and find total marks and percentage and find the following grade.
+100%-90% -> A+
+90%-80% -> A
+80%-70% -> B
+70%-60% -> C
+60%-50% -> D
+<50% -> F
+7. wap to input find the calculator accroding to the choice.
++ => add
+- => sub
+* => mult
+/ => div
+% => remainder
+------------------
+8. wap to find the day of week using switch.
+9. wap to find the month of year using switch.
+10. wap to input a number and check its positive or negative.
+------------------------------
+Assignment Task: 
+----------------------
+int a=3;
+cw(a++);
+cw(a--);
+cw(++a);
+cw(a++);
+cw(a++);
+cw(a--);
+cw(a--);
+cw(++a);
+cw(a++);
+=============================
+int a=6,b=2;
+cw(a++);
+cw(b--);
+cw(a++);
+cw(b++);
+cw(++a);
+cw(b++);
+cw(--a);
+cw(a++);
+cw(b++);
+cw(a--)
+cw(b--)
+cw(a)
+cw(b)
+--------------------------
+int a=-1,b=-2,c=-3;
+cw(a++);
+cw(b--);
+cw(a++);
+cw(b++);
+cw(++c);
+cw(c++);
+cw(--a);
+cw(c++);
+cw(b++);
+cw(c--)
+cw(a--)
+cw(++a)
+cw(a++)
+cw(c--)
+cw(a--)
+cw(a++)
+cw(b++)
+cw(c++)
+----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
