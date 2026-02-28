@@ -1,0 +1,313 @@
+Control Statement / Loop :-
+-------------------------------------
+Why Loop ?? 
+>> If a user want to perform iteration/repetition on statement then we use the concept of Loop.
+or
+>> When a user want to execute one statement multiple times then we use the concept of Loop.
+----------------------------------------------------------------
+Types of Loop:-
+-------------------
+a) While.
+>> In while loop , condition will be checked first after that statement will execute.
+>> It is also known as 'Entry Controlled Loop.'
+Syntax:-
+-------------
+while(condition)
+{
+statement;
+inc/dec;
+}
+For Example:-
+----------------
+Infinite Loop:- A loop which is never going to be terminate in your program.
+------------------------------------------------------------------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            int a = 4;
+            while(a!=1)
+            {
+                Console.WriteLine("Happy BirthDay..");
+                a++;
+            }
+        }
+    }
+}
+or
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            int a = 4;
+            while(a!=1)
+            {
+                Console.WriteLine("Happy BirthDay..");
+                a--;
+            }
+        }
+    }
+}
+-----------------------------------
+b) do-While.
+>> In do-while loop , statement will be executed at once whether the condition is true or false after that condition will check.
+>> It is also known as 'Exit Controlled Loop.'
+Syntax:-
+-------------
+do
+{
+statement;
+inc/dec;
+}
+while(condition); // It must terminate.
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            int a = 4;
+            do
+            {
+                Console.WriteLine("Hello Java..");
+                a--;
+            }
+            while (a > 1);
+        }
+    }
+}
+or
+------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            int a = 4;
+            do
+            {
+                Console.WriteLine("Hello Java..");
+                a--;
+            }
+            while (a < 1); // 3<1
+        }
+    }
+}
+------------
+or
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            int a = 7;
+            do
+            {
+                Console.WriteLine("Hello Java..");
+                a--;
+            }
+            while (a != 0); 
+        }
+    }
+}
+------------------
+or
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            int a = 2;
+            do
+            {
+                Console.WriteLine("Hello Java..");
+                a++;
+            }
+            while (a <9-2);  
+        }
+    }
+}
+-------------------------------------------
+c) for.
+>> It is fast loop.
+It has three expression:-
+	i) Initialization.
+	ii) Condition.
+	iii) Inc/Dec.
+Syntax:
+-------------
+for(Initialization;Condition;Inc/Dec)
+{
+// Statement
+}
+--------------------------------------
+For Example:-
+------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            for(int i = 0; i !=5;i++) 
+            {
+                Console.WriteLine("Happy Learning..");
+            }
+        }
+    }
+}
+----------------------------
+or
+--------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            int i;
+            for (i = 0; i != 5; i++);
+            {
+                Console.WriteLine(i);// 5
+            }
+        }
+    }
+}
+----------------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            for(int i=6;i!=1;i--)
+            {
+                Console.WriteLine("Happy Coding...");
+            }
+        }
+    }
+}
+-------------------------------
+d) foreach.
+>> It works on Collection of items.
+>> Like - String , Tuple , Dictionary , Array etc.
+Syntax:-
+-----------
+foreach(datatype variablename in Collection)
+{
+Statement;
+}
+------------------------------------------------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            string str = "PROGRAMMER";
+            foreach (char ch in str)
+            {
+                Console.WriteLine(ch);
+            }
+        }
+    }
+}
+----------------------------------------------------
+using System;   //BCL /FCL
+
+namespace Batch2PM_21_02_26  // Collection of classes.
+{
+    class Demo
+    {
+        static void Main()
+        {
+            List<string> sports = new List<string> { "Hockey", "FootBall", "Cricket", "POLO", "Batminton", "Ludo" };
+            foreach (string ch in sports)
+            {
+                Console.WriteLine(ch);
+            }
+        }
+    }
+}
+-----------------------------------------------------
+Assignment Task:-
+----------------------
+1. wap to print 1 to 50 number using while,do-while and for.
+2. wap to print 50 to 1 number using while,do-while and for.
+3. wap to print even no. between 1 to 100 using while,do-while and for.
+4. wap to print odd no. between 1 to 100 using while,do-while and for.
+5. wap to find sum and avg of 10 number.
+6. wap to input a number and find the factorial.
+7. wap to input a number and print the fibonacci series.
+8. wap to input a number and check prime or not.
+9. wap to print the series of prime no. between 1 to 100.
+10. wap to input a number and check its armstrong number or not.
+11. wap to input a number and print the sum of its digit.
+12. wap to input a number and print the reverse number.
+13. wap to input a number and check its palindrome or not.
+14. wap to input two number and find its LCM and HCF.
+15. wap to input a string and count total vowel and consonant.
+16. wap to input a number and check its BUZZ no. or not.
+17. wap to input a number and print the table.
+18. wap to input a number and check its neon number or not.
+------------------------------------------------------------------------
+Nested Loop:-
+-------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
